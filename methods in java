@@ -1,0 +1,31 @@
+public class operations {
+        public int credit_bal(int current_bal,int new_bal){
+            int update_bal=current_bal+new_bal;
+            return update_bal;
+        }
+        public int withdraw(int current_bal,int new_bal){
+            int update_bal=current_bal-new_bal;
+            return update_bal;
+        }
+
+
+
+
+}
+ 
+
+
+public class bank {
+   
+    public static void main(String args[]){
+        operations ope=new operations();
+        int result=ope.credit_bal(6000,4000);
+        int r=ope.withdraw(6000, 4000);
+        System.out.println(result);
+        System.out.println(r);
+
+
+
+
+    }
+} 
