@@ -1,0 +1,17 @@
+package swap.java;
+import java.util.Scanner;
+class leap {
+	public static void main(String args[]) {
+	Scanner sc=new Scanner(System.in);
+	int year;
+	boolean leap_year;
+	year=sc.nextInt();
+	leap_year=((year%4==0)&&(year%100!=0)||(year%400==0));
+	if(leap_year) {
+		System.out.println("leap_year");}
+	else {
+			System.out.println("Not a leap_year");
+		}
+	}
+  }
+
