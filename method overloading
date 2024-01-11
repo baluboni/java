@@ -1,0 +1,29 @@
+package swap.java;
+
+public class methods {
+	public int credit_bal(int a,int b) {
+		int update_bal=(a+b);
+		return update_bal;
+	}
+	public double credit_bal(double a,double b) {
+		double update_bal=a+b;
+		return update_bal;
+	}
+
+}
+package swap.java;
+
+public class demo {
+public static void main(String args[]) {
+	methods met=new methods();
+	int result=met.credit_bal(4,5);
+	double r=met.credit_bal(4.5,5.4);
+	
+	System.out.println(result);
+	System.out.println(r);
+	
+			
+	}
+}
+
+
