@@ -1,0 +1,50 @@
+package swap.java;
+
+ class codings {
+	private int age;
+	private String name;
+	private int id;
+	private int phno;
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getPhno() {
+		return phno;
+	}
+	public void setPhno(int phno) {
+		this.phno = phno;
+	}
+	
+}
+package swap.java;
+
+public class demo1 {
+	public static void main(String args[]) {
+		codings cd=new codings();
+		cd.setAge(123);
+		cd.setName("balu");
+		cd.setId(3);
+		cd.setPhno(897896882);
+		System.out.println(cd.getId());
+		System.out.println(cd.getName());
+		System.out.println(cd.getId());
+		System.out.println(cd.getPhno());
+		
+	}
+  
+}
