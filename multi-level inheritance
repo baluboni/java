@@ -1,0 +1,44 @@
+package basic_program;
+
+public class calc {
+	public int Add(int n1,int n2) {
+		return(n1+n2);
+    }
+    public int sub(int n1,int n2) {
+    	return(n1-n2);
+    	}
+    public int mul(int n1,int n2) {
+    	return(n1*n2);
+    }
+}
+package basic_program;
+
+public class advcalc extends calc{
+	public int div(int n1,int n2) {
+		return n1/n2;
+	}
+
+}
+package basic_program;
+
+public class veryadvcalc extends advcalc{
+	public double power(int n1,int n2) {
+		return Math.pow(n1, n2);
+	}
+
+
+}
+package basic_program;
+
+public class demo {
+	public static void main(String args[]) {
+		veryadvcalc c1=new veryadvcalc();
+		int r1=c1.Add(4,5);
+		int r2=c1.sub(6, 3);
+		int r3=c1.mul(4,4);
+		int r4=c1.div(16,4);
+		double r5=c1.power(4, 2);
+		System.out.println(r1+ " " +r2+ " " +r3+ " "+r4+ " " +r5);
+	}
+
+}
